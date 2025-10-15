@@ -1,0 +1,22 @@
+/* styles/main.css */
+/* Simple reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Import modular CSS */
+@import 'typography.css';
+@import 'components.css';
+@import 'effects.css';
+
+/* Basic layout */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  color: #222;
+  padding: 24px;
+  background: #f7f7f7;
+}
+
+/* header/footer */
+.site-header { margin-bottom: 20px; }
+.site-header h1 { font-size: 1.6rem; margin-bottom: .5rem; }
+nav a { text-decoration: none; margin-right: .5rem; }

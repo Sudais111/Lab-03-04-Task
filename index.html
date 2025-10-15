@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 03–04 — CSS Fundamentals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* --- Global Styles --- */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #f0fdfa, #f9fafb, #fff);
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* --- Header --- */
+    header.site-header {
+      text-align: center;
+      background: linear-gradient(90deg, #0ea5a4, #14b8a6);
+      color: #fff;
+      padding: 40px 20px 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0 0 10px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      font-size: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fef9c3;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+
+    /* --- Main Section --- */
+    main {
+      max-width: 800px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px 40px;
+    }
+
+    h2 {
+      color: #0ea5a4;
+      border-left: 4px solid #0ea5a4;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    ol {
+      list-style: decimal-leading-zero;
+      padding-left: 25px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    ol li:hover {
+      transform: translateX(6px);
+      color: #0ea5a4;
+      font-weight: 500;
+    }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 16px;
+      background: #0ea5a4;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>CSS Fundamentals — Lab 03 & 04</h1>
+    <nav>
+      <a href="exercises/selectors.html">Selectors</a> |
+      <a href="exercises/typography.html">Typography</a> |
+      <a href="exercises/backgrounds.html">Backgrounds</a> |
+      <a href="exercises/images.html">Images</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lab Tasks</h2>
+      <ol>
+        <li>Selectors Practice — Explore element, class, ID, and pseudo selectors.</li>
+        <li>Typography Showcase — Experiment with fonts, text spacing, and sizes.</li>
+        <li>Background Gallery — Demonstrate gradients, images, and blending.</li>
+        <li>Image Styling Portfolio — Style thumbnails, overlays, and circles.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>CS 224L — Web Technologies | Created by Muhammad Sudais Khalil</p>
+  </footer>
+</body>
+</html>

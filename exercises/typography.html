@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Typography Showcase</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Merriweather&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- Global Styles --- */
+    body {
+      font-family: 'Merriweather', serif;
+      background-image: url('https://media.istockphoto.com/id/2210559262/photo/modern-empty-room-with-sunlight-and-tree-shadow-interior-background-mockup-with-beige-plaster.webp?a=1&b=1&s=612x612&w=0&k=20&c=CwD00X9xJDrkntok_YwWRYtuTwlNVwWyy6eIRxxyqlM=');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 40px 20px;
+      color: #222;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.88);
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      backdrop-filter: blur(6px);
+    }
+
+    /* --- Typography Section --- */
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: #0ea5a4;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.4rem;
+      letter-spacing: 0.5px;
+
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+      color: #0ea5a4;
+      font-weight: bold;
+    }
+
+    /* --- Font size units --- */
+    .size-px {
+      font-size: 18px;
+      color: #0ea5a4;
+    }
+
+    .size-em {
+      font-size: 1.125em;
+      color: #2563eb;
+    }
+
+    .size-rem {
+      font-size: 1.125rem;
+      color: #16a34a;
+    }
+
+    /* --- Text transform & spacing --- */
+    .upper {
+      text-transform: uppercase;
+    }
+
+    .letter-space {
+      letter-spacing: 2px;
+      color: #f97316;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    h3 {
+      color: #0ea5a4;
+      border-left: 4px solid #0ea5a4;
+      padding-left: 8px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Typography Showcase</h1>
+
+    <p>Paragraph using Merriweather for long-read readability.
+      <span class="text-shadow">Text with shadow</span>
+    </p>
+    <section>
+      <h3>Unit Demo</h3>
+      <p class="size-px">Font-size using px (18px)</p>
+      <p class="size-em">Font-size using em (1.125em)</p>
+      <p class="size-rem">Font-size using rem (1.125rem)</p>
+    </section>
+
+    <section>
+      <h3>Transform & Spacing</h3>
+      <p class="upper letter-space">uppercase with letter spacing</p>
+    </section>
+  </main>
+</body>
+</html>
+

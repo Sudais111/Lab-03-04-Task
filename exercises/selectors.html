@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Selectors Lab</title>
+  <link rel="stylesheet" href="../styles/main.css">
+
+  <style>
+    /* --- Global Styles --- */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=60');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-color: #f0fdf4; /* backup color */
+      margin: 0;
+      padding: 20px;
+      color: #222;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0ea5a4;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      color: #0ea5a4;
+      margin-bottom: 10px;
+    }
+
+    /* Box styling */
+    .box {
+      padding: 16px;
+      margin: 14px 0;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Specificity demo */
+    p { color: green; }
+    .override p { color: blue; }
+    #highest p { color: red; }
+
+    /* Attribute selectors */
+    a[target="_blank"] { color: purple; }
+    input[type="email"] {
+      border: 2px solid #f59e0b;
+      padding: 6px;
+      border-radius: 6px;
+      outline: none;
+    }
+    a[href*="wikipedia"] { text-decoration: underline; }
+
+    /* Combinators */
+    .parent > .child { font-weight: 700; }
+    .sibling + p { color: #444; }
+    .sibling ~ span { font-style: italic; }
+
+    /* Pseudo-classes */
+    a:link { color: #0369a1; text-decoration: none; }
+    a:visited { color: #6b7280; }
+    a:hover { text-decoration: underline; }
+    button:hover { transform: translateY(-2px); }
+
+    /* Pseudo-elements */
+    .quote::before {
+      content: "❝ ";
+      font-size: 1.2rem;
+      color: #6b7280;
+    }
+    .quote::after {
+      content: " ❞";
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Selectors Practice</h1>
+
+    <section class="box">
+      <h2>Specificity</h2>
+      <div class="override" id="highest">
+        <p>This paragraph color is set by element, class, and ID rules. ID wins → should be red.</p>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>Attribute Selectors</h2>
+      <a href="https://en.wikipedia.org" target="_blank">Wikipedia</a><br><br>
+      <input type="email" placeholder="email@example.com">
+    </section>
+
+    <section class="box parent">
+      <h2>Combinators</h2>
+      <div class="child">Child (>) selector target</div>
+      <div>Sibling area
+        <span class="sibling">sibling marker</span>
+        <p>Adjacent paragraph (+) becomes colored</p>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>Pseudo-elements & Classes</h2>
+      <p class="quote">This is a quoted phrase using ::before and ::after.</p>
+      <a href="#">Link example</a>
+    </section>
+  </main>
+</body>
+</html>
